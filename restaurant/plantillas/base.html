@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+  <!--Tipo de caracteres-->
+        <meta charset="utf-8">
+        <!--Tamaño inicial de la pagina-->
+        <meta name= "viewport" content="width=device-wdth, initial-scale=1, shrink-to-fit=no">
+        <!--Compatibilidad de Navegadores-->
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <!--Conexion de archivos css-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+
+
+    <title>
+
+    {% block title %} {% endblock %}
+
+    </title>
+</head>
+
+
+<body>
+
+    <h1 style ="background-color: grey; color:white; text-align:center"> Restaurante siglo XXI  </h1>
+ {% include "superior/barra.html" %}
+       <h3> El mejor restaurante </h3>
+       {% block content %}
+
+
+
+       {% endblock %}
+
+<p style ="background-color: grey; color:white; text-align:center">El mejor restaurante </p>
+</body>
+
+
+
+</html>
+
+

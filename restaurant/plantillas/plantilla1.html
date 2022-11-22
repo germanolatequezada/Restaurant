@@ -1,0 +1,46 @@
+<html>
+    <body>
+
+    {% include "superior/barra.html" %} 
+    <h2 style ="color: red">
+    hola estamos con html hola barby
+    </h1>
+    <p> Mi nombre es: {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+      <p> la hora actual es: {{momento_actual}} </p>
+       <p> el d&iacute;a actual es: {{momento_actual.day}}/{{momento_actual.month}}/{{momento_actual.year}} </p>
+
+        {# no temas diseñador #}
+
+        {% comment %} 
+        ignora esta parte
+             
+        porfa  !!!!      
+         {% endcomment %}
+
+       {% if nombre_persona == 'Ing. German' %}
+       <p> Django lo hace: {{nombre_persona.upper}} {{apellido_persona.upper}} </p>
+        {% else %}
+       <p> suplente</p>
+
+
+
+       {% endif %}
+
+        <p> temas: {{temas}} </p>
+        <p> <strong> Temas del curso:</strong></p>
+        <p>
+            <ul>
+            {% if temas %}
+                {% for elTema in temas %}
+
+           <li> {{elTema}} </li>
+
+                {% endfor %}
+                {% else %}
+
+                <p> No hay elementos que mostrar </p>
+            {% endif %}
+            </ul>
+
+    </body>
+    </html>
