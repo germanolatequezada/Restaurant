@@ -56,7 +56,7 @@ ROOT_URLCONF = 'Restaurant.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-      #  'DIRS': ['C:/ProyectoDjango/Restaurant/Restaurant/plantillas'],
+        'DIRS': ['C:/ProyectoDjango/Restaurant/Restaurant/plantillas'],
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
