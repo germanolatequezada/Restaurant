@@ -22,5 +22,5 @@ from Pedidos.views import Pedidos
 urlpatterns = [
     path('admin/', admin.site.urls),
    # path('jet/', include('jet.urls','jet')),
-  #  path('pedidos/',Pedidos),
+    path('pedidos/',Pedidos),
 ]

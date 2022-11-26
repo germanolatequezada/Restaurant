@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'jet',
+    #'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,8 +56,8 @@ ROOT_URLCONF = 'Restaurant.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/ProyectoDjango/Restaurant/Restaurant/plantillas'],
-       # 'DIRS': [],
+      #  'DIRS': ['C:/ProyectoDjango/Restaurant/Restaurant/plantillas'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
