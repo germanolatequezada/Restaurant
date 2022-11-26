@@ -11,3 +11,5 @@ def Pedidos(request):
     
     fecha_actual=datetime.datetime.now()
     return render(request,"pedidos.html", {"dameFecha":fecha_actual})   
+
+    #lkdhlkfsahlfea
